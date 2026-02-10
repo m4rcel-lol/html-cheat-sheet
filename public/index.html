@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML5 cheat sheet with all tags and examples">
+    <meta name="keywords" content="HTML, cheat sheet, reference, tags, elements">
+    <meta name="author" content="HTML Reference">
+    <title>Complete HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="https://nocss-psi.vercel.app/no.v1.min.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Cheat Sheet</h1>
+        <p>A comprehensive reference guide to all HTML tags and elements</p>
+    </header>
+
+    <nav>
+        <p><strong>Quick Navigation:</strong></p>
+        <ul>
+            <li><a href="#structure">Document Structure</a></li>
+            <li><a href="#text">Text Formatting</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#links">Links & Navigation</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#semantic">Semantic HTML5</a></li>
+            <li><a href="#metadata">Metadata</a></li>
+            <li><a href="#interactive">Interactive Elements</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- DOCUMENT STRUCTURE -->
+        <section id="structure">
+            <h2>Document Structure</h2>
+            
+            <article>
+                <h3>Basic Document Template</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Content goes here
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                
+                <dl>
+                    <dt><code>&lt;!DOCTYPE html&gt;</code></dt>
+                    <dd>Document type declaration for HTML5</dd>
+                    
+                    <dt><code>&lt;html&gt;</code></dt>
+                    <dd>Root element of an HTML page</dd>
+                    
+                    <dt><code>&lt;head&gt;</code></dt>
+                    <dd>Contains metadata and links to scripts/stylesheets</dd>
+                    
+                    <dt><code>&lt;body&gt;</code></dt>
+                    <dd>Contains the visible page content</dd>
+                </dl>
+            </article>
+        </section>
+
+        <!-- TEXT FORMATTING -->
+        <section id="text">
+            <h2>Text Formatting</h2>
+            
+            <article>
+                <h3>Headings</h3>
+                <h1>Heading 1 - &lt;h1&gt;</h1>
+                <h2>Heading 2 - &lt;h2&gt;</h2>
+                <h3>Heading 3 - &lt;h3&gt;</h3>
+                <h4>Heading 4 - &lt;h4&gt;</h4>
+                <h5>Heading 5 - &lt;h5&gt;</h5>
+                <h6>Heading 6 - &lt;h6&gt;</h6>
+            </article>
+
+            <article>
+                <h3>Paragraphs & Text Elements</h3>
+                <p><code>&lt;p&gt;</code> - Paragraph element for blocks of text</p>
+                <p><code>&lt;br&gt;</code> - Line break (self-closing)</p>
+                <p><code>&lt;hr&gt;</code> - Horizontal rule / thematic break:</p>
+                <hr>
+            </article>
+
+            <article>
+                <h3>Inline Text Formatting</h3>
+                <p><strong>&lt;strong&gt;</strong> - Strong importance (bold)</p>
+                <p><b>&lt;b&gt;</b> - Bold text (stylistic)</p>
+                <p><em>&lt;em&gt;</em> - Emphasized text (italic)</p>
+                <p><i>&lt;i&gt;</i> - Italic text (stylistic)</p>
+                <p><mark>&lt;mark&gt;</mark> - Highlighted text</p>
+                <p><small>&lt;small&gt;</small> - Smaller text</p>
+                <p><del>&lt;del&gt;</del> - Deleted text (strikethrough)</p>
+                <p><ins>&lt;ins&gt;</ins> - Inserted text (underlined)</p>
+                <p><sub>&lt;sub&gt;</sub> - Subscript</p>
+                <p><sup>&lt;sup&gt;</sup> - Superscript</p>
+                <p><code>&lt;code&gt;</code> - Inline code</p>
+                <p><kbd>&lt;kbd&gt;</kbd> - Keyboard input</p>
+                <p><samp>&lt;samp&gt;</samp> - Sample output</p>
+                <p><var>&lt;var&gt;</var> - Variable</p>
+                <p><abbr title="HyperText Markup Language">&lt;abbr&gt;</abbr> - Abbreviation with title attribute</p>
+                <p><cite>&lt;cite&gt;</cite> - Citation</p>
+                <p><q>&lt;q&gt;</q> - Inline quotation</p>
+                <p><dfn>&lt;dfn&gt;</dfn> - Definition term</p>
+                <p><time datetime="2026-02-10">&lt;time&gt;</time> - Date/time</p>
+            </article>
+
+            <article>
+                <h3>Block-level Text Elements</h3>
+                <blockquote>
+                    <p>&lt;blockquote&gt; - Block quotation for longer quotes</p>
+                </blockquote>
+                
+                <pre>&lt;pre&gt; - Preformatted text
+    Preserves    spaces
+    and line breaks</pre>
+                
+                <address>
+                    &lt;address&gt;<br>
+                    Contact information<br>
+                    123 Main St, City, State 12345
+                </address>
+            </article>
+        </section>
+
+        <!-- LISTS -->
+        <section id="lists">
+            <h2>Lists</h2>
+            
+            <article>
+                <h3>Unordered List - &lt;ul&gt;</h3>
+                <ul>
+                    <li>List item - &lt;li&gt;</li>
+                    <li>Another item</li>
+                    <li>Nested list:
+                        <ul>
+                            <li>Nested item</li>
+                            <li>Another nested item</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Ordered List - &lt;ol&gt;</h3>
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+                
+                <p>With type attribute:</p>
+                <ol type="A">
+                    <li>Type A (uppercase letters)</li>
+                    <li>Type a (lowercase letters)</li>
+                </ol>
+                <ol type="I">
+                    <li>Type I (uppercase Roman numerals)</li>
+                    <li>Type i (lowercase Roman numerals)</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>Description List - &lt;dl&gt;</h3>
+                <dl>
+                    <dt>&lt;dt&gt; - Term</dt>
+                    <dd>&lt;dd&gt; - Description</dd>
+                    
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language</dd>
+                    
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                </dl>
+            </article>
+        </section>
+
+        <!-- LINKS & NAVIGATION -->
+        <section id="links">
+            <h2>Links & Navigation</h2>
+            
+            <article>
+                <h3>Anchor Tag - &lt;a&gt;</h3>
+                <p><a href="https://example.com">&lt;a href="url"&gt;</a> - External link</p>
+                <p><a href="#top">&lt;a href="#id"&gt;</a> - Internal link to ID</p>
+                <p><a href="mailto:email@example.com">&lt;a href="mailto:"&gt;</a> - Email link</p>
+                <p><a href="tel:+1234567890">&lt;a href="tel:"&gt;</a> - Phone link</p>
+                <p><a href="https://example.com" target="_blank">&lt;a target="_blank"&gt;</a> - Open in new tab</p>
+                <p><a href="https://example.com" download>&lt;a download&gt;</a> - Download link</p>
+            </article>
+        </section>
+
+        <!-- MEDIA -->
+        <section id="media">
+            <h2>Media Elements</h2>
+            
+            <article>
+                <h3>Images - &lt;img&gt;</h3>
+                <pre><code>&lt;img src="image.jpg" alt="Description" width="300" height="200"&gt;</code></pre>
+                <p>Attributes: src, alt, width, height, loading, srcset</p>
+            </article>
+
+            <article>
+                <h3>Picture Element</h3>
+                <pre><code>&lt;picture&gt;
+    &lt;source media="(min-width: 800px)" srcset="large.jpg"&gt;
+    &lt;source media="(min-width: 400px)" srcset="medium.jpg"&gt;
+    &lt;img src="small.jpg" alt="Description"&gt;
+&lt;/picture&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>Audio - &lt;audio&gt;</h3>
+                <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+    Your browser does not support audio.
+&lt;/audio&gt;</code></pre>
+                <p>Attributes: controls, autoplay, loop, muted, preload</p>
+            </article>
+
+            <article>
+                <h3>Video - &lt;video&gt;</h3>
+                <pre><code>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+    &lt;track src="subtitles.vtt" kind="subtitles" srclang="en"&gt;
+    Your browser does not support video.
+&lt;/video&gt;</code></pre>
+                <p>Attributes: controls, autoplay, loop, muted, poster, width, height</p>
+            </article>
+
+            <article>
+                <h3>Embedded Content</h3>
+                <p><code>&lt;iframe&gt;</code> - Embedded frame</p>
+                <pre><code>&lt;iframe src="page.html" width="500" height="300"&gt;&lt;/iframe&gt;</code></pre>
+                
+                <p><code>&lt;embed&gt;</code> - Embedded external content</p>
+                <pre><code>&lt;embed src="file.pdf" width="500" height="600"&gt;</code></pre>
+                
+                <p><code>&lt;object&gt;</code> - External resource</p>
+                <pre><code>&lt;object data="file.pdf" type="application/pdf"&gt;&lt;/object&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>SVG & Canvas</h3>
+                <p><code>&lt;svg&gt;</code> - Scalable Vector Graphics container</p>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="gray" />
+                </svg>
+                
+                <p><code>&lt;canvas&gt;</code> - Graphics container for JavaScript drawing</p>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+            </article>
+
+            <article>
+                <h3>Figure & Caption</h3>
+                <figure>
+                    <pre><code>Code example or image</code></pre>
+                    <figcaption>&lt;figcaption&gt; - Caption for &lt;figure&gt;</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- TABLES -->
+        <section id="tables">
+            <h2>Tables</h2>
+            
+            <article>
+                <h3>Table Structure</h3>
+                <table>
+                    <caption>&lt;caption&gt; - Table caption</caption>
+                    <thead>
+                        <tr>
+                            <th>&lt;th&gt; Header 1</th>
+                            <th>&lt;th&gt; Header 2</th>
+                            <th>&lt;th&gt; Header 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;td&gt; Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                        </tr>
+                        <tr>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">&lt;tfoot&gt; Footer with colspan="3"</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                <p><strong>Table Elements:</strong></p>
+                <ul>
+                    <li><code>&lt;table&gt;</code> - Table container</li>
+                    <li><code>&lt;caption&gt;</code> - Table title</li>
+                    <li><code>&lt;thead&gt;</code> - Table header section</li>
+                    <li><code>&lt;tbody&gt;</code> - Table body section</li>
+                    <li><code>&lt;tfoot&gt;</code> - Table footer section</li>
+                    <li><code>&lt;tr&gt;</code> - Table row</li>
+                    <li><code>&lt;th&gt;</code> - Table header cell</li>
+                    <li><code>&lt;td&gt;</code> - Table data cell</li>
+                    <li><code>&lt;col&gt;</code> - Column properties</li>
+                    <li><code>&lt;colgroup&gt;</code> - Group of columns</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- FORMS -->
+        <section id="forms">
+            <h2>Forms & Input Elements</h2>
+            
+            <article>
+                <h3>Form Element</h3>
+                <form action="/submit" method="post">
+                    <fieldset>
+                        <legend>&lt;legend&gt; - Fieldset Title</legend>
+                        
+                        <label for="text-input">&lt;label&gt; Text Input:</label>
+                        <input type="text" id="text-input" name="text" placeholder="Enter text">
+                        
+                        <label for="email-input">Email:</label>
+                        <input type="email" id="email-input" name="email" required>
+                        
+                        <label for="password-input">Password:</label>
+                        <input type="password" id="password-input" name="password">
+                        
+                        <label for="number-input">Number:</label>
+                        <input type="number" id="number-input" name="number" min="0" max="100">
+                        
+                        <label for="date-input">Date:</label>
+                        <input type="date" id="date-input" name="date">
+                        
+                        <label for="time-input">Time:</label>
+                        <input type="time" id="time-input" name="time">
+                        
+                        <label for="datetime-input">Datetime-local:</label>
+                        <input type="datetime-local" id="datetime-input" name="datetime">
+                        
+                        <label for="month-input">Month:</label>
+                        <input type="month" id="month-input" name="month">
+                        
+                        <label for="week-input">Week:</label>
+                        <input type="week" id="week-input" name="week">
+                        
+                        <label for="color-input">Color:</label>
+                        <input type="color" id="color-input" name="color">
+                        
+                        <label for="range-input">Range:</label>
+                        <input type="range" id="range-input" name="range" min="0" max="100">
+                        
+                        <label for="tel-input">Tel:</label>
+                        <input type="tel" id="tel-input" name="tel">
+                        
+                        <label for="url-input">URL:</label>
+                        <input type="url" id="url-input" name="url">
+                        
+                        <label for="search-input">Search:</label>
+                        <input type="search" id="search-input" name="search">
+                        
+                        <label for="file-input">File:</label>
+                        <input type="file" id="file-input" name="file">
+                        
+                        <label>Hidden input:</label>
+                        <input type="hidden" name="hidden" value="secret">
+                        
+                        <p>Checkboxes:</p>
+                        <label>
+                            <input type="checkbox" name="check1" value="1" checked>
+                            Option 1 (checked)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="check2" value="2">
+                            Option 2
+                        </label>
+                        
+                        <p>Radio buttons:</p>
+                        <label>
+                            <input type="radio" name="radio" value="a" checked>
+                            Choice A
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" value="b">
+                            Choice B
+                        </label>
+                        
+                        <label for="select">Select dropdown:</label>
+                        <select id="select" name="select">
+                            <option value="">Choose...</option>
+                            <optgroup label="Group 1">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </optgroup>
+                            <optgroup label="Group 2">
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                            </optgroup>
+                        </select>
+                        
+                        <label for="textarea">Textarea:</label>
+                        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+                        
+                        <label for="datalist-input">Datalist:</label>
+                        <input list="browsers" id="datalist-input" name="browser">
+                        <datalist id="browsers">
+                            <option value="Chrome">
+                            <option value="Firefox">
+                            <option value="Safari">
+                            <option value="Edge">
+                        </datalist>
+                        
+                        <button type="submit">Submit Button</button>
+                        <button type="reset">Reset Button</button>
+                        <button type="button">Regular Button</button>
+                        
+                        <input type="submit" value="Input Submit">
+                        <input type="reset" value="Input Reset">
+                        <input type="button" value="Input Button">
+                    </fieldset>
+                </form>
+                
+                <p><strong>Form Attributes:</strong></p>
+                <ul>
+                    <li>action - URL to send form data</li>
+                    <li>method - GET or POST</li>
+                    <li>enctype - multipart/form-data for file uploads</li>
+                    <li>target - _blank, _self, etc.</li>
+                    <li>autocomplete - on or off</li>
+                    <li>novalidate - disable validation</li>
+                </ul>
+                
+                <p><strong>Input Attributes:</strong></p>
+                <ul>
+                    <li>required - field must be filled</li>
+                    <li>readonly - cannot be edited</li>
+                    <li>disabled - grayed out</li>
+                    <li>placeholder - hint text</li>
+                    <li>pattern - regex validation</li>
+                    <li>min, max - range limits</li>
+                    <li>maxlength - character limit</li>
+                    <li>multiple - allow multiple values</li>
+                    <li>autofocus - auto-focus on page load</li>
+                </ul>
+
+                <h4>Output Element</h4>
+                <output name="result">0</output>
+                <p><code>&lt;output&gt;</code> - Result of a calculation</p>
+
+                <h4>Progress & Meter</h4>
+                <p>Progress: <progress value="70" max="100">70%</progress></p>
+                <p>Meter: <meter value="0.6" min="0" max="1">60%</meter></p>
+            </article>
+        </section>
+
+        <!-- SEMANTIC HTML5 -->
+        <section id="semantic">
+            <h2>Semantic HTML5 Elements</h2>
+            
+            <article>
+                <h3>Page Structure</h3>
+                <dl>
+                    <dt><code>&lt;header&gt;</code></dt>
+                    <dd>Introductory content or navigation</dd>
+                    
+                    <dt><code>&lt;nav&gt;</code></dt>
+                    <dd>Navigation links section</dd>
+                    
+                    <dt><code>&lt;main&gt;</code></dt>
+                    <dd>Main content of the document (only one per page)</dd>
+                    
+                    <dt><code>&lt;article&gt;</code></dt>
+                    <dd>Self-contained content (blog post, article)</dd>
+                    
+                    <dt><code>&lt;section&gt;</code></dt>
+                    <dd>Thematic grouping of content</dd>
+                    
+                    <dt><code>&lt;aside&gt;</code></dt>
+                    <dd>Sidebar or tangentially related content</dd>
+                    
+                    <dt><code>&lt;footer&gt;</code></dt>
+                    <dd>Footer information</dd>
+                </dl>
+            </article>
+
+            <article>
+                <h3>Content Elements</h3>
+                <dl>
+                    <dt><code>&lt;details&gt;</code> & <code>&lt;summary&gt;</code></dt>
+                    <dd>Disclosure widget for showing/hiding content</dd>
+                </dl>
+                
+                <details>
+                    <summary>Click to expand</summary>
+                    <p>Hidden content revealed when expanded</p>
+                </details>
+                
+                <dl>
+                    <dt><code>&lt;dialog&gt;</code></dt>
+                    <dd>Dialog box or modal</dd>
+                </dl>
+                
+                <dialog open>
+                    <p>This is a dialog element</p>
+                </dialog>
+            </article>
+        </section>
+
+        <!-- METADATA -->
+        <section id="metadata">
+            <h2>Metadata & Document Head</h2>
+            
+            <article>
+                <h3>Meta Tags</h3>
+                <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="description" content="Page description"&gt;
+&lt;meta name="keywords" content="keyword1, keyword2"&gt;
+&lt;meta name="author" content="Author Name"&gt;
+&lt;meta http-equiv="refresh" content="30"&gt;
+&lt;meta property="og:title" content="Open Graph title"&gt;
+&lt;meta property="og:image" content="image.jpg"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>Link Relations</h3>
+                <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;link rel="icon" href="favicon.ico"&gt;
+&lt;link rel="canonical" href="https://example.com/page"&gt;
+&lt;link rel="alternate" hreflang="es" href="https://example.com/es/"&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="dns-prefetch" href="https://example.com"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>Script & Style</h3>
+                <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;script defer src="deferred.js"&gt;&lt;/script&gt;
+&lt;script async src="async.js"&gt;&lt;/script&gt;
+&lt;script type="module" src="module.js"&gt;&lt;/script&gt;
+
+&lt;style&gt;
+    body { margin: 0; }
+&lt;/style&gt;
+
+&lt;noscript&gt;JavaScript is disabled&lt;/noscript&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>Base URL</h3>
+                <pre><code>&lt;base href="https://example.com/" target="_blank"&gt;</code></pre>
+            </article>
+        </section>
+
+        <!-- INTERACTIVE ELEMENTS -->
+        <section id="interactive">
+            <h2>Interactive Elements</h2>
+            
+            <article>
+                <h3>Details & Summary</h3>
+                <details>
+                    <summary>More Information</summary>
+                    <p>Additional content that can be shown or hidden</p>
+                </details>
+            </article>
+
+            <article>
+                <h3>Data Attributes</h3>
+                <p data-custom="value">Elements can have custom data-* attributes</p>
+                <pre><code>&lt;div data-user-id="123" data-role="admin"&gt;...&lt;/div&gt;</code></pre>
+            </article>
+        </section>
+
+        <!-- GLOBAL ATTRIBUTES -->
+        <section>
+            <h2>Global Attributes</h2>
+            <p>These attributes can be used on any HTML element:</p>
+            
+            <dl>
+                <dt><code>id</code></dt>
+                <dd>Unique identifier for the element</dd>
+                
+                <dt><code>class</code></dt>
+                <dd>One or more class names for styling</dd>
+                
+                <dt><code>style</code></dt>
+                <dd>Inline CSS styles</dd>
+                
+                <dt><code>title</code></dt>
+                <dd>Advisory information (tooltip)</dd>
+                
+                <dt><code>lang</code></dt>
+                <dd>Language of the element's content</dd>
+                
+                <dt><code>dir</code></dt>
+                <dd>Text direction (ltr, rtl, auto)</dd>
+                
+                <dt><code>hidden</code></dt>
+                <dd>Hide the element</dd>
+                
+                <dt><code>tabindex</code></dt>
+                <dd>Tab order for keyboard navigation</dd>
+                
+                <dt><code>accesskey</code></dt>
+                <dd>Keyboard shortcut</dd>
+                
+                <dt><code>contenteditable</code></dt>
+                <dd>Whether content is editable (true/false)</dd>
+                
+                <dt><code>draggable</code></dt>
+                <dd>Whether element is draggable (true/false)</dd>
+                
+                <dt><code>spellcheck</code></dt>
+                <dd>Enable spell checking (true/false)</dd>
+                
+                <dt><code>translate</code></dt>
+                <dd>Whether to translate content (yes/no)</dd>
+                
+                <dt><code>data-*</code></dt>
+                <dd>Custom data attributes</dd>
+            </dl>
+        </section>
+
+        <!-- SPECIAL CHARACTERS -->
+        <section>
+            <h2>HTML Entities (Special Characters)</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Character</th>
+                        <th>Entity Name</th>
+                        <th>Entity Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>&amp;lt;</td>
+                        <td>&amp;#60;</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>&amp;gt;</td>
+                        <td>&amp;#62;</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td>&amp;amp;</td>
+                        <td>&amp;#38;</td>
+                    </tr>
+                    <tr>
+                        <td>&quot;</td>
+                        <td>&amp;quot;</td>
+                        <td>&amp;#34;</td>
+                    </tr>
+                    <tr>
+                        <td>&apos;</td>
+                        <td>&amp;apos;</td>
+                        <td>&amp;#39;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&amp;nbsp;</td>
+                        <td>&amp;#160;</td>
+                    </tr>
+                    <tr>
+                        <td>&copy;</td>
+                        <td>&amp;copy;</td>
+                        <td>&amp;#169;</td>
+                    </tr>
+                    <tr>
+                        <td>&reg;</td>
+                        <td>&amp;reg;</td>
+                        <td>&amp;#174;</td>
+                    </tr>
+                    <tr>
+                        <td>&trade;</td>
+                        <td>&amp;trade;</td>
+                        <td>&amp;#8482;</td>
+                    </tr>
+                    <tr>
+                        <td>&euro;</td>
+                        <td>&amp;euro;</td>
+                        <td>&amp;#8364;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- OBSOLETE ELEMENTS -->
+        <section>
+            <h2>Obsolete/Deprecated Elements</h2>
+            <p><strong>Avoid using these elements:</strong></p>
+            <ul>
+                <li><code>&lt;center&gt;</code> - Use CSS text-align instead</li>
+                <li><code>&lt;font&gt;</code> - Use CSS font properties instead</li>
+                <li><code>&lt;marquee&gt;</code> - Use CSS animations instead</li>
+                <li><code>&lt;blink&gt;</code> - Use CSS animations instead</li>
+                <li><code>&lt;big&gt;</code> - Use CSS font-size instead</li>
+                <li><code>&lt;strike&gt;</code> - Use &lt;del&gt; or &lt;s&gt; instead</li>
+                <li><code>&lt;tt&gt;</code> - Use &lt;code&gt; or CSS instead</li>
+                <li><code>&lt;frame&gt;</code>, <code>&lt;frameset&gt;</code> - Use &lt;iframe&gt; if needed</li>
+                <li><code>&lt;acronym&gt;</code> - Use &lt;abbr&gt; instead</li>
+                <li><code>&lt;applet&gt;</code> - Use &lt;object&gt; or &lt;embed&gt; instead</li>
+            </ul>
+        </section>
+
+        <!-- BEST PRACTICES -->
+        <section>
+            <h2>HTML Best Practices</h2>
+            
+            <article>
+                <h3>General Guidelines</h3>
+                <ol>
+                    <li>Always declare DOCTYPE</li>
+                    <li>Use lowercase for element and attribute names</li>
+                    <li>Close all HTML elements (even self-closing ones in XHTML)</li>
+                    <li>Quote attribute values</li>
+                    <li>Always specify alt for images</li>
+                    <li>Use semantic elements appropriately</li>
+                    <li>Validate your HTML</li>
+                    <li>Keep accessibility in mind (ARIA attributes, proper headings)</li>
+                    <li>Use comments to organize sections</li>
+                    <li>Indent nested elements for readability</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>Accessibility</h3>
+                <ul>
+                    <li>Use semantic HTML elements</li>
+                    <li>Include alt text for images</li>
+                    <li>Use proper heading hierarchy (h1-h6)</li>
+                    <li>Label form inputs properly</li>
+                    <li>Ensure sufficient color contrast</li>
+                    <li>Make interactive elements keyboard accessible</li>
+                    <li>Use ARIA attributes when needed</li>
+                    <li>Provide text alternatives for non-text content</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>ARIA Attributes (Examples)</h3>
+                <pre><code>&lt;button aria-label="Close dialog"&gt;X&lt;/button&gt;
+&lt;div role="alert" aria-live="polite"&gt;Message&lt;/div&gt;
+&lt;input aria-required="true" aria-describedby="help-text"&gt;
+&lt;nav aria-label="Main navigation"&gt;...&lt;/nav&gt;</code></pre>
+            </article>
+        </section>
+
+        <!-- COMMON PATTERNS -->
+        <section>
+            <h2>Common HTML Patterns</h2>
+            
+            <article>
+                <h3>Responsive Images</h3>
+                <pre><code>&lt;img src="small.jpg" 
+     srcset="small.jpg 300w, medium.jpg 600w, large.jpg 1200w"
+     sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 1200px"
+     alt="Description"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>Skip Link (Accessibility)</h3>
+                <pre><code>&lt;a href="#main-content" class="skip-link"&gt;Skip to main content&lt;/a&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>Loading Attribute</h3>
+                <pre><code>&lt;img src="image.jpg" loading="lazy" alt="Description"&gt;
+&lt;iframe src="page.html" loading="lazy"&gt;&lt;/iframe&gt;</code></pre>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 HTML Cheat Sheet | Complete Reference Guide</p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>
